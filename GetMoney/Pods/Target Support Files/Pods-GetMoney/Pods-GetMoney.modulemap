@@ -1,0 +1,6 @@
+framework module Pods_GetMoney {
+  umbrella header "Pods-GetMoney-umbrella.h"
+
+  export *
+  module * { export * }
+}
