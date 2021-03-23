@@ -16,14 +16,24 @@ PODS:
     - Moya/Core (= 14.0.0)
   - Moya/Core (14.0.0):
     - Alamofire (~> 5.0)
+  - RxCocoa (6.1.0):
+    - RxRelay (= 6.1.0)
+    - RxSwift (= 6.1.0)
+  - RxRelay (6.1.0):
+    - RxSwift (= 6.1.0)
+  - RxSwift (6.1.0)
   - SnapKit (5.0.1)
   - SwiftProtobuf (1.15.0)
+  - SwiftyJSON (4.3.0)
 
 DEPENDENCIES:
   - Kingfisher
   - LeanCloud
   - Moya
+  - RxCocoa
+  - RxSwift
   - SnapKit
+  - SwiftyJSON (~> 4.0)
 
 SPEC REPOS:
   trunk:
@@ -32,8 +42,12 @@ SPEC REPOS:
     - Kingfisher
     - LeanCloud
     - Moya
+    - RxCocoa
+    - RxRelay
+    - RxSwift
     - SnapKit
     - SwiftProtobuf
+    - SwiftyJSON
 
 SPEC CHECKSUMS:
   Alamofire: 2291f7d21ca607c491dd17642e5d40fdcda0e65c
@@ -41,9 +55,13 @@ SPEC CHECKSUMS:
   Kingfisher: e71c6fac2aebb1262888cabc2cb13d313362a48f
   LeanCloud: 292372f011060a2173125c0fad7f928c3244df73
   Moya: 5b45dacb75adb009f97fde91c204c1e565d31916
+  RxCocoa: 5c51f02d562cbd94629f6c26cf0c80fe4ab8d343
+  RxRelay: 483e1a19fad961b41f0b0c0bee506f46c1ae14fe
+  RxSwift: a834e5c538e89eca0cae86f403f4fbf0336786ce
   SnapKit: 97b92857e3df3a0c71833cce143274bf6ef8e5eb
   SwiftProtobuf: 3320217e9d8fb75f36b40282e78c482640fd75dd
+  SwiftyJSON: 6faa0040f8b59dead0ee07436cbf76b73c08fd08
 
-PODFILE CHECKSUM: 6521467d12c02812ef064cfe60b5dd17bc041824
+PODFILE CHECKSUM: eb1ebbd2492f2895c2f2dc690293bd6580633655
 
 COCOAPODS: 1.10.1

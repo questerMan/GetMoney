@@ -54,6 +54,7 @@ struct TabBarOriginal {
     var tabBarTintColor:UIColor = UIColor().RGB(red: 22, green: 160, blue: 133) //rgba(22, 160, 133,1.0)
 }
 
+
 class KContainClass: NSObject {
     
 

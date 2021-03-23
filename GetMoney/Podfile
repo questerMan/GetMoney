@@ -6,7 +6,9 @@ target 'GetMoney' do
   use_frameworks!
   pod 'LeanCloud'
   pod 'SnapKit'
-  #pod 'Alamofire', '~> 5.2'
+  pod 'SwiftyJSON', '~> 4.0' #JSON数据模型转换
+  pod 'RxSwift’ #响应式编程RxSwift
+  pod 'RxCocoa'#响应式编程RxSwift的拓展
   pod 'Moya' #基于Alamofire网络请求管理
   pod 'Kingfisher'
   

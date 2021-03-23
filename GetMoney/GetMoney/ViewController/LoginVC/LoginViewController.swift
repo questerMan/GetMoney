@@ -60,6 +60,7 @@ class LoginViewController: UIViewController {
     lazy var loginBtn:UIButton = {
         let btn = UIButton(type: .custom)
         btn.setTitle("登录", for: .normal)
+        btn.backgroundColor = UIColor().RGB(red: 25, green: 182, blue: 200, alpha: 0.6)
         btn.addTarget(self, action: #selector(loginAction(btn:)), for: .touchUpInside)
         return btn
     }()
@@ -131,7 +132,7 @@ class LoginViewController: UIViewController {
             make.top.equalTo(self.passwordLine.snp_bottomMargin).offset(kScaleWidth(100))
             make.left.equalTo(kScaleWidth(40))
             make.right.equalTo(kScaleWidth(-40))
-            make.height.equalTo(kScaleWidth(50))
+            make.height.equalTo(kScaleWidth(40))
         }
         
     }
