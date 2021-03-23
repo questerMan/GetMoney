@@ -9,6 +9,9 @@
 /* Begin PBXBuildFile section */
 		01513E13A4551DA070D0EED3 /* Pods_GetMoneyTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6AD9034E3A528AD44EDA7D43 /* Pods_GetMoneyTests.framework */; };
 		1C622858C65D9C03552261BF /* Pods_GetMoney_GetMoneyUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CA2C0BD0545B74C485FE764A /* Pods_GetMoney_GetMoneyUITests.framework */; };
+		260D10B42609BDA400D27B6B /* Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 260D10B32609BDA400D27B6B /* Extension.swift */; };
+		260D10BB2609BE2800D27B6B /* TabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 260D10BA2609BE2800D27B6B /* TabBarViewController.swift */; };
+		260D10C52609C0E300D27B6B /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 260D10C42609C0E300D27B6B /* LoginViewController.swift */; };
 		2ED585FD260443F00075FCC8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2ED585FC260443F00075FCC8 /* AppDelegate.swift */; };
 		2ED585FF260443F00075FCC8 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2ED585FE260443F00075FCC8 /* SceneDelegate.swift */; };
 		2ED58601260443F00075FCC8 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2ED58600260443F00075FCC8 /* ViewController.swift */; };
@@ -39,6 +42,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		260D10B32609BDA400D27B6B /* Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extension.swift; sourceTree = "<group>"; };
+		260D10BA2609BE2800D27B6B /* TabBarViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabBarViewController.swift; sourceTree = "<group>"; };
+		260D10C42609C0E300D27B6B /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		2C0E7736887791B1F154A1A2 /* Pods-GetMoney.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GetMoney.release.xcconfig"; path = "Target Support Files/Pods-GetMoney/Pods-GetMoney.release.xcconfig"; sourceTree = "<group>"; };
 		2ED585F9260443F00075FCC8 /* GetMoney.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GetMoney.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2ED585FC260443F00075FCC8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -93,6 +99,62 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		260D10B82609BDCF00D27B6B /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				260D10C22609BEB000D27B6B /* LoginVC */,
+				260D10C12609BE9D00D27B6B /* SuperManagerVC */,
+				260D10C02609BE8800D27B6B /* MineVC */,
+				260D10BF2609BE5D00D27B6B /* ShowHomeVC */,
+				260D10B92609BDE100D27B6B /* TabbarVC */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		260D10B92609BDE100D27B6B /* TabbarVC */ = {
+			isa = PBXGroup;
+			children = (
+				260D10BA2609BE2800D27B6B /* TabBarViewController.swift */,
+			);
+			path = TabbarVC;
+			sourceTree = "<group>";
+		};
+		260D10BF2609BE5D00D27B6B /* ShowHomeVC */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ShowHomeVC;
+			sourceTree = "<group>";
+		};
+		260D10C02609BE8800D27B6B /* MineVC */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = MineVC;
+			sourceTree = "<group>";
+		};
+		260D10C12609BE9D00D27B6B /* SuperManagerVC */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = SuperManagerVC;
+			sourceTree = "<group>";
+		};
+		260D10C22609BEB000D27B6B /* LoginVC */ = {
+			isa = PBXGroup;
+			children = (
+				260D10C42609C0E300D27B6B /* LoginViewController.swift */,
+			);
+			path = LoginVC;
+			sourceTree = "<group>";
+		};
+		260D10C32609BED800D27B6B /* NetWorkManager */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = NetWorkManager;
+			sourceTree = "<group>";
+		};
 		2ED585F0260443F00075FCC8 = {
 			isa = PBXGroup;
 			children = (
@@ -118,6 +180,8 @@
 		2ED585FB260443F00075FCC8 /* GetMoney */ = {
 			isa = PBXGroup;
 			children = (
+				260D10C32609BED800D27B6B /* NetWorkManager */,
+				260D10B82609BDCF00D27B6B /* ViewController */,
 				2ED5863C26044CBE0075FCC8 /* Library */,
 				2ED585FC260443F00075FCC8 /* AppDelegate.swift */,
 				2ED585FE260443F00075FCC8 /* SceneDelegate.swift */,
@@ -152,6 +216,7 @@
 			isa = PBXGroup;
 			children = (
 				2ED5863D26044CDA0075FCC8 /* KContainClass.swift */,
+				260D10B32609BDA400D27B6B /* Extension.swift */,
 			);
 			path = Library;
 			sourceTree = "<group>";
@@ -417,9 +482,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				260D10C52609C0E300D27B6B /* LoginViewController.swift in Sources */,
+				260D10B42609BDA400D27B6B /* Extension.swift in Sources */,
 				2ED58601260443F00075FCC8 /* ViewController.swift in Sources */,
 				2ED585FD260443F00075FCC8 /* AppDelegate.swift in Sources */,
 				2ED585FF260443F00075FCC8 /* SceneDelegate.swift in Sources */,
+				260D10BB2609BE2800D27B6B /* TabBarViewController.swift in Sources */,
 				2ED5863E26044CDA0075FCC8 /* KContainClass.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

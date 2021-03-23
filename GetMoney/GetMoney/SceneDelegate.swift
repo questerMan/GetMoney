@@ -17,6 +17,14 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
     func scene(_ scene: UIScene, willConnectTo session: UISceneSession, options connectionOptions: UIScene.ConnectionOptions) {
     
         
+        window = UIWindow.init(windowScene: scene as! UIWindowScene)
+        window?.backgroundColor = .white
+        window?.frame = UIScreen.main.bounds
+        
+        
+        window?.rootViewController = LoginViewController()
+        window?.makeKeyAndVisible()
+        
         guard let _ = (scene as? UIWindowScene) else { return }
     }
 

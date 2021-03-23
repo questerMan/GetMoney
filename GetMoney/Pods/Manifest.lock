@@ -3,6 +3,7 @@ PODS:
   - GRDB.swift (4.14.0):
     - GRDB.swift/standard (= 4.14.0)
   - GRDB.swift/standard (4.14.0)
+  - Kingfisher (6.2.1)
   - LeanCloud (17.7.0):
     - LeanCloud/RTM (= 17.7.0)
   - LeanCloud/Foundation (17.7.0):
@@ -11,24 +12,38 @@ PODS:
     - GRDB.swift (~> 4.14)
     - LeanCloud/Foundation (= 17.7.0)
     - SwiftProtobuf (~> 1.13)
+  - Moya (14.0.0):
+    - Moya/Core (= 14.0.0)
+  - Moya/Core (14.0.0):
+    - Alamofire (~> 5.0)
+  - SnapKit (5.0.1)
   - SwiftProtobuf (1.15.0)
 
 DEPENDENCIES:
+  - Kingfisher
   - LeanCloud
+  - Moya
+  - SnapKit
 
 SPEC REPOS:
   trunk:
     - Alamofire
     - GRDB.swift
+    - Kingfisher
     - LeanCloud
+    - Moya
+    - SnapKit
     - SwiftProtobuf
 
 SPEC CHECKSUMS:
   Alamofire: 2291f7d21ca607c491dd17642e5d40fdcda0e65c
   GRDB.swift: 8cc3ab7c8b8b4ac1761deb8dca4b51c1c9d429f8
+  Kingfisher: e71c6fac2aebb1262888cabc2cb13d313362a48f
   LeanCloud: 292372f011060a2173125c0fad7f928c3244df73
+  Moya: 5b45dacb75adb009f97fde91c204c1e565d31916
+  SnapKit: 97b92857e3df3a0c71833cce143274bf6ef8e5eb
   SwiftProtobuf: 3320217e9d8fb75f36b40282e78c482640fd75dd
 
-PODFILE CHECKSUM: 3439c1ce34cf5f093f7d9b89ada6e0a53379a529
+PODFILE CHECKSUM: 6521467d12c02812ef064cfe60b5dd17bc041824
 
 COCOAPODS: 1.10.1
